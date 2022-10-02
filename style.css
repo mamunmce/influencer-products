@@ -1,0 +1,217 @@
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* add nav style section start  */
+
+.top-nav-section{
+  width: 1100px;
+  margin: auto;
+}
+
+.priend-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catagory-section a{
+  text-decoration: none;
+  color: black;
+  padding: 0 0 0 20px;
+}
+
+/* dd main style section start  */
+
+.influencer-div{
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.influencer-detiels h1{
+  font-size: 50px;
+}
+
+.influencer-detiels p{
+  font-size: 20px;
+}
+
+.influencer-detiels button{
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color:#E02C6D;
+  border: none;
+  cursor: pointer;
+}  
+
+.influencer-stemble{
+  background-image: url(images/Circle\ design.svg);
+  width: 65%;
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+}
+
+.influencer-stemble img{
+  width: 100%;
+}
+
+/* add style company logo section  */
+
+.company-logo{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px 0;
+}
+
+/* add style popular section start  */
+
+.popular-title{
+  width: 245px;
+  margin: auto;
+  font-size: 30px;
+  margin-top: 95px;
+  margin-bottom: 45px;
+}
+
+.popular-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.popular-card{
+  box-shadow: 0px 0px 7px 0px slategrey;
+  border-radius: 4px;
+}
+
+.popular-card{
+  padding-left: 22px;
+  padding-top: 20px;
+}
+
+.popular-detels p{
+  line-height: 4px;
+}
+
+.popular-detels h2{
+  line-height: 3px;
+}
+
+.popular-detels span i{
+  font-size: 12px;
+  color: #FB8200;
+}
+
+.button-section a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #E02C6D;
+  float: right;
+  margin-top: 40px;
+}
+
+/* add style products section start  */
+
+.products-section{
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+}
+
+.products-detales{
+  padding-left: 80px;
+}
+
+.products-detales h1{
+  font-size: 40px;
+}
+
+.products-detales p{
+  font-size: 20px;
+}
+
+.products-detales button{
+  font-size: 18px;
+  background-color: #E02C6D;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+/* add style footer section  */
+
+footer{
+  background-color:#0A0826;
+  padding: 50px;
+  margin-top: 70px;
+}
+
+.footer-item{
+  width: 250px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+.footer-title p{
+  line-height: 4px;
+}
+
+.footer-icone{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+
+.footer-icone i{
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* add media quray section  */
+
+@media only screen and (max-width:677px){
+  .top-nav-section{
+    width: 100%;
+  }
+  .influencer-stemble{
+    width: 100%;
+  }
+  .catagory-section{
+    display: none;
+  }
+  .influencer-div{
+    flex-direction: column-reverse;
+  }
+  .influencer-detiels h1, p{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .company-logo {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+  }
+  .popular-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+  .popular-detels p{
+    text-align: left;
+  }
+  .products-section{
+    flex-direction: column;
+  }
+
+  .products-detales{
+    padding-left: 15px;
+  }
+  .footer-title p{
+    line-height: 50px;
+  }
+}
+
